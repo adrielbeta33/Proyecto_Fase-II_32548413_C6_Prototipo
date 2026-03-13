@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú - Cafetín Central</title>
+    <link rel="stylesheet" href="css/clientestyle.css">
+
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="logo principal">
+
+        <nav>
+            <ul>
+                <li><a>OPCIONES CUENTA</a>
+                    <ul class="submenu">
+                        <li><a href="#">PUNTOS: <span id="puntos-fidelidad">150</span></a></li>
+                        <li><a href="#"><span id="nombre-usuario">MI PERFIL</span></a><img src="imagenes/user.png" alt="user"></li>
+                        <li><a href="index.html">CERRAR SESIÓN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Sc-1">
+        <h1>MENÚ DE PRODUCTOS</h1>
+    </section>
+
+<main class="contenedor-menu">
+        <div class="grid-productos">
+            <div class="producto-card">
+                <img src="imagenes/empanada.jpg" alt="Empanada">
+                <h3>Empanada</h3>
+                <p>Precio: $1.50</p>
+                <button class="btn-add" data-item="Empanada" data-price="1.50">AGREGAR</button>
+            </div>
+
+            <div class="producto-card">
+                <img src="imagenes/pastelito.jpg" alt="Pastelito">
+                <h3>Pastelito</h3>
+                <p>Precio: $1.50</p>
+                <button class="btn-add" data-item="Pastelito" data-price="1.50">AGREGAR</button>
+            </div>
+
+            <div class="producto-card">
+                <img src="imagenes/sandwich.jpg" alt="Sandwich">
+                <h3>Sandwich</h3>
+                <p>Precio: $3.00</p>
+                <button class="btn-add" data-item="Sandwich" data-price="3.00">AGREGAR</button>
+            </div>
+
+            <div class="producto-card">
+                <img src="imagenes/malta.jpg" alt="Malta">
+                <h3>Malta</h3>
+                <p>Precio: $1.25</p>
+                <button class="btn-add" data-item="Malta" data-price="1.25">AGREGAR</button>
+            </div>
+
+            <div class="producto-card">
+                <img src="imagenes/cocacola.jpg" alt="CocaCola">
+                <h3>CocaCola 1.5L</h3>
+                <p>Precio: $2.50</p>
+                <button class="btn-add" data-item="CocaCola 1.5L" data-price="2.50">AGREGAR</button>
+            </div>
+
+            <div class="producto-card">
+                <img src="imagenes/fanta.jpg" alt="Fanta">
+                <h3>Fanta Naranja 1.5L</h3>
+                <p>Precio: $2.50</p>
+                <button class="btn-add" data-item="Fanta Naranja 1.5L" data-price="2.50">AGREGAR</button>
+            </div>
+        </div>
+    </main>
+
+    <section class="seccion-carrito">
+        <article>
+            <h1>RESUMEN DE PEDIDO</h1>
+            <ul id="lista-compra">
+                <li>No hay productos seleccionados.</li>
+            </ul>
+            <hr>
+            <p>TOTAL A PAGAR: $ <span id="monto-total">0.00</span></p>
+            <button class="btn-confirmar" id="confirmar-pedido">CONFIRMAR COMPRA</button>
+        </article>
+    </section>
+
+    <section class="seccion-historial">
+        <article>
+            <h1>MI HISTORIAL DE COMPRAS</h1>
+            <table class="tabla-general">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Detalle de Productos</th>
+                        <th>Total Pagado</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12/03/2026</td>
+                        <td>2 Empanadas, 1 Malta</td>
+                        <td>$4.25</td>
+                        <td>Entregado</td>
+                    </tr>
+                    <tr>
+                        <td>10/03/2026</td>
+                        <td>Fanta Naranja 1.5L</td>
+                        <td>$2.50</td>
+                        <td>Entregado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+    <footer>
+        <div class="f-1">
+            <div>
+                <p><b>CAFETERÍA UCV</b></p>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="f-2">
+            <p class="logo"><img src="imagenes/logo ucv.png" alt="LOGO"></p>
+        </div>
+        <div class="f-3">
+            <div>
+                <p>Redes Sociales</p>
+                <nav>
+                    <a href="https://www.facebook.com/"><img src="imagenes/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com"><img src="imagenes/instagram.png" alt="instagram"></a>
+                    <a href="https://x.com/"><img src="imagenes/twiter.png" alt="twiter"></a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cliente.js"></script>
+</body>
+</html>

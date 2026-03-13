@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Caja - Cafetín Central</title>
+    <link rel="stylesheet" href="css/cajastyle.css">
+
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="logo principal">
+
+        <nav>
+            <ul>
+                <li><a>OPCIONES CUENTA</a>
+                    <ul class="submenu">
+                        <li><a href="#"><span id="nombre-usuario">MI PERFIL</span></a><img src="imagenes/user.png" alt="user"></li>
+                        <li><a href="index.html">CERRAR SESIÓN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Sc-1">
+        <h1>PANEL DE CAJA</h1>
+    </section>
+
+    <main class="contenedor-caja">
+        <h2>Pedidos por Cobrar</h2>
+        <table class="tabla-pedidos">
+            <thead>
+                <tr>
+                    <th>ID Pedido</th>
+                    <th>Cliente</th>
+                    <th>Monto Total</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="lista-pedidos">
+                <tr>
+                    <td>#1024</td>
+                    <td>ClienteUCV</td>
+                    <td>$ 5.50</td>
+                    <td><button onclick="seleccionarPedido(5.50)">Cobrar</button></td>
+                </tr>
+                <tr>
+                    <td>#1025</td>
+                    <td>Juan Perez</td>
+                    <td>$ 12.00</td>
+                    <td><button onclick="seleccionarPedido(12.00)">Cobrar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="calculadora-cobro">
+            <h3>Procesar Pago</h3>
+            <p>Total a Pagar: <strong>$ <span id="monto-a-cobrar">0.00</span></strong></p>
+            
+            <input type="number" id="paga-con" placeholder="Efectivo Recibido">
+            
+            <button class="btn-cobrar" id="btn-calcular">CALCULAR VUELTO</button>
+            
+            <div class="resultado-vuelto">
+                Vuelto: $ <span id="vuelto">0.00</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="f-1">
+            <div>
+                <p><b>CAFETERÍA UCV</b></p>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="f-2">
+            <p class="logo"><img src="imagenes/logo ucv.png" alt="LOGO"></p>
+        </div>
+        <div class="f-3">
+            <div>
+                <p>Redes Sociales</p>
+                <nav>
+                    <a href="https://www.facebook.com/"><img src="imagenes/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com"><img src="imagenes/instagram.png" alt="instagram"></a>
+                    <a href="https://x.com/"><img src="imagenes/twiter.png" alt="twiter"></a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/caja.js"></script>
+</body>
+</html>
