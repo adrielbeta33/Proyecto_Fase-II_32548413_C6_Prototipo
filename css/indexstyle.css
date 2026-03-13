@@ -1,0 +1,365 @@
+/* --- ESTILOS GENERALES Y RESET --- */
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    width:100%;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+/* --- HEADER Y NAVEGACIÓN --- */
+header{
+    background-color: rgb(72, 176, 255);
+    z-index: 999;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+header img{
+    width: 8%;
+}
+
+header nav{
+    width: 70%;
+    float: right;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+header nav img{
+    width:70px; 
+    height:70px;
+    position: absolute;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li{
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 60%;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    color: black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    font-size: 260%;
+}
+
+header ul li:hover a{
+    animation-duration: 0.5s;
+    animation-name: menuS;  
+    color: black;
+    -webkit-text-stroke-color: black;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+/* --- SUBMENÚ --- */
+.submenu{
+    display: none;
+}
+
+li:hover .submenu, .submenu:hover{
+    margin-top: 0px;
+    position: absolute;
+    width: 150px;
+    float: initial;
+    list-style: none;
+    background-color: white ;
+    display: block;
+}
+
+.submenu li{
+    float: left;
+    width: 150px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display:list-item;
+}
+
+.submenu li a{
+    color: black;
+    margin-left: 5px;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    -webkit-text-stroke-width: 0px;
+    font-size: 250%;
+}
+
+.submenu li:hover a{
+    animation-duration: 0.5s;
+    animation-name: submenuS;  
+}
+
+.submenu li:hover a{
+    color: gray;
+    margin-left: 8px;
+}
+
+.submenu li img{
+    width: 20%;
+    height: auto; /* Corregido para evitar que se vea aplastado */
+    padding-left: 6%;
+}
+
+/* --- SECCIONES Y ESTRUCTURA PRINCIPAL --- */
+.principal{
+    width: 100%;
+    margin-bottom: 125px;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+section p{
+    width: 550px;
+}
+
+aside{
+    width: 50%;
+    z-index: 1;
+}
+
+article{
+    width: 50%;
+    z-index: 2;
+}
+
+article img{
+    width: 100%;
+    filter: brightness(1);
+}
+
+.Sc-1:hover article img{
+    animation-duration: 1s;
+    animation-name: sectionS; 
+    filter: brightness(1.3);
+}
+
+article h1{
+    font-size: 220%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Century Gothic; 
+    font-weight: lighter; 
+}
+
+article p{
+    font-size: 150%;
+    font-family: Century Gothic; 
+    font-weight: lighter; 
+    text-align: justify;
+}
+
+/* --- CLASES Sc-n (ESTILOS ORIGINALES) --- */
+.Sc-1{
+    padding-top: 25%;
+    font-family: Century Gothic; 
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block; /* Modificado para el flujo del Index */
+}
+
+.Sc-1 h1{
+    text-align: center;
+    font-size: 200%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.Sc-3 h1{
+    text-align: right;
+    margin-right: 2%;
+}
+
+.Sc-2 h1{
+    font-size: 200%;
+}
+
+.Sc-4 h1{
+    margin-left: 2%;
+}
+
+.Sc-1 p{
+    padding-top: 5%;
+    width: 100%;
+}
+
+.Sc-3 p{
+
+    margin-right: 5%;
+}
+
+.Sc-2 p{
+    margin-left: 0%;
+    font-size: 100%;
+}
+
+.Sc-4 p{
+    margin-left: 5%;
+}
+
+/* --- CLASES Sc-n (NUEVAS REGLAS PARA EL INDEX) --- */
+.presentacion-texto {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.galeria-inicio {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.galeria-inicio article {
+    width: 48%;
+}
+
+.item-beneficio {
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+
+.item-beneficio img {
+    width: 20%;
+    height: auto;
+    margin-right: 5%;
+}
+
+.info-frase {
+    width: 75%;
+}
+
+.info-frase h1 {
+    font-size: 160%;
+    border-bottom: none !important;
+}
+
+/* --- ANIMACIONES --- */
+@keyframes submenuS{
+    0%{ color: black; margin-left: 5px; }
+    100%{ color: gray; margin-left: 8px; }
+}
+
+@keyframes menuS{
+    0%{ color: white; -webkit-text-stroke-color: white; }
+    100%{ color: white; -webkit-text-stroke-color: black; }
+}
+
+@keyframes asideS{
+    0%{ filter: blur(6px); }
+    100%{ filter: blur(0px); }
+}
+
+@keyframes sectionS{
+    0%{ filter: brightness(1); }
+    100%{ filter: brightness(1.3); }
+}
+
+/* --- FOOTER --- */
+footer{
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgb(0, 0, 0) 14%,rgb(0, 0, 0) 100%); 
+    padding-top: 75px;
+    color: white;
+    font-family: "DotGothic16", sans-serif;
+    display: inline-flex;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+}
+
+.f-1{
+    margin-left: 1%;
+    width: 65%;
+}
+
+.f-1 ul li:hover{
+    border-bottom:solid ;
+    border-width: 1px;
+}
+
+.f-1 div{
+    margin-left: 10%;
+    margin-bottom: 20%;
+}
+
+.f-1 ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.f-1 ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.f-2{
+    margin-left: 1%;
+    padding-left: 20%;
+    width: 20%;
+    box-sizing: content-box;
+}
+
+.f-2 img{
+    width: 100%;
+}
+
+.f-3{
+    margin: 2%;
+    padding-left: 15%;
+    width: 80%;
+}
+
+.f-3 div{
+    font-size: 150%;
+    text-align: center;
+}
+
+.f-3 img{
+    width: 18%;
+}
+
+/* --- OTROS --- */
+.asideimg{
+    width: 100%;
+    filter: blur(6px);
+}
+
+.cortador1{
+    position: absolute;
+    left: 40%;
+    width: 12%;
+}
+
+.cortador2{
+    position: absolute;
+    right: 40%;
+    transform: scaleX(-1);
+    width: 12%;
+}
+/*si alguien lee esto, si, hay varias clases en el css que no termine usando,
+no las borre porque no afectaban el resultado final y las mantuve por si las usaba
+alguno de los diseños de las otras secciones*/

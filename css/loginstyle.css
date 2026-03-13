@@ -1,0 +1,464 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+
+body{
+    width:100%;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+header{
+    background-color: rgb(72, 176, 255);
+    z-index: 999;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+header nav{
+    width: 70%;
+    float: right;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+header img{
+    width: 8%;
+}
+
+header nav img{
+    width:70px; 
+    height:70px;
+    position: absolute;
+    /* right: 3%;
+    top: 6%; */
+}
+
+.principal{
+    width: 100%;
+    margin-bottom: 125px;
+}
+
+footer{
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgb(0, 0, 0) 14%,rgb(0, 0, 0) 100%); 
+    padding-top: 75px;
+    color: white;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li{
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 60%;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    color: black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    font-size: 260%;
+
+}
+
+header ul li:hover a{
+    animation-duration: 0.5s;
+    animation-name: menuS;  
+    color: black;
+    -webkit-text-stroke-color: black;
+
+}
+
+header nav li
+{
+    display: inline-block;
+}
+
+section{
+    margin-bottom: 10px;
+}
+
+.asideimg{
+    width: 100%;
+    filter: blur(6px);
+}
+
+section:hover .asideimg{
+    animation-duration: 1s;
+    animation-name: asideS; 
+    width: 100%;
+    filter: blur(0px);
+}
+
+.cortador1{
+    position: absolute;
+    left: 40%;
+    width: 12%;
+
+}
+
+.cortador2{
+    position: absolute;
+    right: 40%;
+    transform: scaleX(-1);
+    width: 12%;
+}
+
+section{
+    display: flex;
+    width: 100%;
+}
+
+section p{
+    width: 550px;
+}
+
+aside{
+    width: 50%;
+    z-index: 1;
+}
+
+article{
+    width: 50%;
+    z-index: 2;
+}
+
+article img{
+    width: 100%;
+    filter: brightness(1);
+}
+
+section:hover article img{
+    animation-duration: 1s;
+    animation-name: sectionS; 
+    filter: brightness(2);
+}
+
+
+
+article h1{
+    font-size: 220%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Century Gothic; 
+    font-weight: lighter; 
+}
+
+article p{
+    font-size: 150%;
+    font-family: Century Gothic; 
+    font-weight: lighter; 
+    text-align: justify;
+}
+
+.Sc-1{
+    padding-top: 25%;
+    font-family: Century Gothic; 
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.Sc-1 h1{
+    text-align: center;
+    font-size: 200%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.Sc-3 h1{
+    text-align: right;
+    margin-right: 2%;
+}
+
+.Sc-2 h1{
+    margin-left: 2%;
+}
+
+.Sc-4 h1{
+    margin-left: 2%;
+}
+
+.Sc-1 p{
+    float: right;
+    margin-right: 5%;
+}
+
+
+.Sc-3 p{
+    float: right;
+    margin-right: 5%;
+}
+
+.Sc-2 p{
+    margin-left: 5%;
+}
+
+.Sc-4 p{
+    margin-left: 5%;
+}
+
+footer{
+    font-family: "DotGothic16", sans-serif;
+    display: inline-flex;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+}
+
+.f-1{
+    margin-left: 1%;
+    width: 65%;
+
+}
+
+.f-1 ul li:hover{
+    border-bottom:solid ;
+    border-width: 1px;
+}
+
+.f-1 div{
+    margin-left: 10%;
+    margin-bottom: 20%;
+}
+
+.f-2 img{
+    margin-top: 0%;
+    padding: 0%;
+    width: 100%;
+        box-sizing: content-box;
+
+}
+
+.f-2{
+    margin-left: 1%;
+    padding-left: 20%;
+    width: 20%;
+        box-sizing: content-box;
+    
+
+}
+
+.f-2 p{
+    box-sizing: content-box;
+    width: 100%;
+    
+
+}
+
+.f-3 div{
+    font-size: 150%;
+    text-align: center;
+}
+
+.f-3 img{
+    width: 18%;
+}
+
+
+.f-3{
+    margin: 2%;
+    padding-left: 15%;
+    width: 80%;
+}
+
+.f-1 ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.f-1 ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.submenu{
+    display: none;
+}
+
+
+
+li:hover .submenu, .submenu:hover{
+    margin-top: 0px;
+    position: absolute;
+    width: 150px;
+    float: initial;
+    list-style: none;
+    background-color: white ;
+    display: block;
+}
+
+.submenu li{
+    float: left;
+    width: 150px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display:list-item;
+
+}
+
+.submenu li a{
+    color: black;
+    margin-left: 5px;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    -webkit-text-stroke-width: 0px;
+    font-size: 250%;
+
+
+}
+
+.submenu li:hover a{
+    animation-duration: 0.5s;
+    animation-name: submenuS;  
+}
+
+.submenu li:hover a{
+    color: gray;
+    margin-left: 8px;
+}
+
+.caja-login{
+    text-align: center;
+}
+
+@keyframes submenuS{
+    0%{
+        color: black;
+        margin-left: 5px;
+    }
+    100%{
+        color: gray;
+        margin-left: 8px;
+    }
+}
+
+@keyframes submenuS2{
+    0%{
+        color: black;
+        -webkit-text-stroke-color: black;
+    }
+    100%{
+        color: whitey;
+        -webkit-text-stroke-color: white;
+    }
+}
+
+@keyframes menuS{
+    0%{
+        color: white;
+        -webkit-text-stroke-color: white;
+    }
+    100%{
+        color: whitey;
+        -webkit-text-stroke-color: black;
+    }
+}
+
+@keyframes asideS{
+    0%{
+        filter: blur(6px);
+    }
+    100%{
+        filter: blur(0px);
+    }
+}
+
+@keyframes sectionS{
+    0%{
+        filter: brightness(1);
+    }
+    100%{
+        filter: brightness(2);
+    }
+}
+
+
+.principal-login {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.caja-login {
+    background-color: white;
+    width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+
+.caja-login h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: rgb(72, 176, 255);
+}
+
+
+.btn-entrar {
+    width: 100%;
+    padding: 14px;
+    background-color: rgb(72, 176, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-entrar:hover {
+    background-color: #3a96e0;
+}
+
+
+.error-text {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 15px;
+}
